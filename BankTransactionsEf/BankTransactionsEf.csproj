@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B71D3793-B36C-4BAF-907A-29DF8C163619}</ProjectGuid>
+    <ProjectGuid>{B26E4BE9-618B-4468-95E9-AA06C5D2ABEC}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>IntroToEf</RootNamespace>
-    <AssemblyName>IntroToEf</AssemblyName>
+    <RootNamespace>BankTransactionsEf</RootNamespace>
+    <AssemblyName>BankTransactionsEf</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -49,51 +49,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201804170037477_First.cs" />
-    <Compile Include="Migrations\201804170037477_First.Designer.cs">
-      <DependentUpon>201804170037477_First.cs</DependentUpon>
+    <Compile Include="Migrations\201804170150087_Initial.cs" />
+    <Compile Include="Migrations\201804170150087_Initial.Designer.cs">
+      <DependentUpon>201804170150087_Initial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201804170058416_First2.cs" />
-    <Compile Include="Migrations\201804170058416_First2.Designer.cs">
-      <DependentUpon>201804170058416_First2.cs</DependentUpon>
+    <Compile Include="Migrations\201804170152164_TransactionsTable.cs" />
+    <Compile Include="Migrations\201804170152164_TransactionsTable.Designer.cs">
+      <DependentUpon>201804170152164_TransactionsTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201804170102504_MoviesAdded.cs" />
-    <Compile Include="Migrations\201804170102504_MoviesAdded.Designer.cs">
-      <DependentUpon>201804170102504_MoviesAdded.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201804170120165_MoviesModified.cs" />
-    <Compile Include="Migrations\201804170120165_MoviesModified.Designer.cs">
-      <DependentUpon>201804170120165_MoviesModified.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201804170142098_MoviesIdToID.cs" />
-    <Compile Include="Migrations\201804170142098_MoviesIdToID.Designer.cs">
-      <DependentUpon>201804170142098_MoviesIdToID.cs</DependentUpon>
+    <Compile Include="Migrations\201804170207016_TransactionsTableTypoFix.cs" />
+    <Compile Include="Migrations\201804170207016_TransactionsTableTypoFix.Designer.cs">
+      <DependentUpon>201804170207016_TransactionsTableTypoFix.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Movie.cs" />
-    <Compile Include="MovieDb.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transaction.cs" />
+    <Compile Include="TransactionDb.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201804170037477_First.resx">
-      <DependentUpon>201804170037477_First.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201804170150087_Initial.resx">
+      <DependentUpon>201804170150087_Initial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804170058416_First2.resx">
-      <DependentUpon>201804170058416_First2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201804170152164_TransactionsTable.resx">
+      <DependentUpon>201804170152164_TransactionsTable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804170102504_MoviesAdded.resx">
-      <DependentUpon>201804170102504_MoviesAdded.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804170120165_MoviesModified.resx">
-      <DependentUpon>201804170120165_MoviesModified.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804170142098_MoviesIdToID.resx">
-      <DependentUpon>201804170142098_MoviesIdToID.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201804170207016_TransactionsTableTypoFix.resx">
+      <DependentUpon>201804170207016_TransactionsTableTypoFix.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
